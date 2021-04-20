@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+:root {
+    --dblue: #1b2a49;
+    --blue: #465881;
+    --cyan: #00909e;
+    --gray: #c9d1d3;
+    --wtext: white;
+}
+
+.nav_top {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px 30px;
+    background-color: var(--gray);
+}
+
+li, a, button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--wtext);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 5px solid var(--dblue);
+}
+
+header img {
+    width: 75px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_top {
+    list-style: none;
+}
+
+.nav_top li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_top li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_top li a:hover {
+    color: var(--blue)
+}
+
+button {
+    padding: 9px 25px;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cyan);
+    font-size: 35px;
+}
+
+h1 {
+    text-shadow: 3px 3px 4px var(--gray);
+    font-family: 'Zen Dots', cursive, monospace;    
+    display: flex;
+    justify-content: flex-end;
+    align-items: bottom;
+    font-size: 400%;
+    padding: 300px;
+    padding-right: 3%;
+    padding-top: 20%;
+    color: var(--dblue)
+    
+}
+
+.top_background {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/top_background.jpg");
+    background-size: cover;
+    background-position: top;
+    border-bottom: 5px solid var(--dblue);
+}
+
+main {
+    background-color: var(--cyan);
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-top: 50px;
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1%;
+    padding-top: 1.5%; 
+    color: var(--dblue);
+    width: 25%;
+    font-weight: bold;
+    font-size: 50px; 
+    font-display: end; 
+    align-content: top;  
+    transition: all 1s ease-in-out;
+}
+
+h2:hover {
+    text-shadow: 3px 3px 4px var(--gray);
+}
+
+p {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1%;
+    padding-top: .5%; 
+    padding-left: 3%;
+    width: 75%;
+    border-left: 5px solid var(--dblue);
+    font-size: 24px;
+    color: var(--dblue);
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+  
+@media screen and (max-width: 992px) {
+
+}
