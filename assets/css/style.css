@@ -196,6 +196,9 @@ article section a button {
     align-content: center;
 }
 
+.project_images div {
+    flex: 0 0 50%;}
+
 .project1 {
     border: 5px solid var(--dblue);
     width: 100%;
@@ -208,8 +211,8 @@ article section a button {
 
 .project2 {
     border: 5px solid var(--dblue);
-    width: 50%;
-    height: 240%;
+    width: 450px;
+    height: 240px;
     z-index: 10;
     opacity: 1;
     transition: .5s ease;
