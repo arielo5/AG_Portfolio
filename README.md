@@ -15,7 +15,7 @@ On the webpage you will see an logo icon and a navigation bar on top with 3 link
 
  * [Github Profile](https://github.com/arielo5)
 
- * [Screenshot of the full web page](./assets/screenshot/)
+ * [Screenshot of the full web page](./assets/images/portfolio_wewbpage.png)
 
  ## Repo Content
  * assets folder
