@@ -19,66 +19,67 @@
 
 <body>
 
-    <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="assets\images\logo2.svg" alt="" width="30" height="24">
-            </a>
-            <a class="navbar-brand" href="#">AG Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">LinkedIn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-
     <header>
+
         <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-md-7 py-4">
                         <h4 class="text-white">About Me:</h4>
                         <p class="text-muted">👋 Hi, I’m Ariel Martinez <br><br>
-                            I’m interested in learning new ways to better develope my skils in work and also video games and board games.
-                            I’m currently learning web development coding with the University of Minnesota Coding Boot Camp.
+                            I’m interested in learning new ways to better develope my skils in work and also video games
+                            and board games.
+                            I’m currently learning web development coding with the University of Minnesota Coding Boot
+                            Camp.
                             I’m looking to collaborate in front end and/or back end web development.</p>
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact:</h4>
+                        <h4 class="text-white">Contact:</h4> <br>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">LinkedIn</a></li>
-                            <li><a href="#" class="text-white">Email me</a></li>
-                            <li><a href="#" class="text-white">GitHub</a></li>
+                            <li><a href="#" class="text-white">LinkedIn</a></li> <br>
+                            <li>
+                                <div id="contact"><button type="button" class="btn btn-info btn" data-bs-toggle="modal"
+                                        data-bs-target="#contact-modal">Show Contact Form</button></div>
+                            </li> <br>
+                            <li><a href="https://github.com/arielo5" class="text-white">GitHub</a></li> <br>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div id="contact-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form id="contactForm" name="contact" role="form">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea name="message" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-success" id="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -114,168 +115,135 @@
 
         <div class="album py-5 bg-light">
             <div class="container">
-                
 
+                <!-- IDK, You Pick -->
                 <div class="row align-items-start ps-0 pe-0 pb-3">
                     <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
+                        <div class="card shadow-sm text-center text-center">
+                            <img src="assets\images\IDK_You_Pick_01.png" class="card-img-top"
+                                alt="IDK, You Pick Page Web Page">
 
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    </div>
-                                    
+                                <p class="card-text">This project was to create a web page that will help you decide
+                                    what movie and cuisien pick for you for a movie date night. The application will
+                                    randomly pick a movie depending on what type of category you choose and the same
+                                    goes for the type of cuisine. You can either just pick one of each seperatly or both
+                                    at the same time.</p>
+
+                                <div class="btn-group">
+                                    <a href="https://arielo5.github.io/Group-Collaboration/" class="btn btn-primary">Go
+                                        to Page</a>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                    <!-- Super Weather Page -->
                     <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
+                        <div class="card shadow-sm text-center">
+                            <img src="assets\images\Super_Weather_Page_Screenshot.png" class="card-img-top"
+                                alt="IDK, You Pick Page Web Page">
 
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    </div>
-                                    
+                                <p class="card-text">This project was to create a web page that that will fetch you an
+                                    API of a weather server and display the weather information of the current time and
+                                    also a forecast of the next 5 days of the city you need. I learn that for this work
+                                    you needed to apply all the knowledge for different 3rd party API to betterapply my
+                                    knowledge with other cooding skils.</p>
+                                <div class="btn-group">
+                                    <a href="https://arielo5.github.io/Super_Weather_Page/" class="btn btn-primary">Go
+                                        to Page</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Work Day Scheduler -->
                     <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
+                        <div class="card shadow-sm text-center">
+                            <img src="assets\images\work-day-sheduler.png" class="card-img-top"
+                                alt="IDK, You Pick Page Web Page">
+
+                            <div class="card-body">
+                                <p class="card-text">This project was to create a web page that you can see your work
+                                    day schedule and save what you are going to do in that work hour. The reason for
+                                    this project was to apply the knowledge learn with Third-Party APIs using javascrip
+                                    with jQuery and luxon.</p>
+                                <div class="btn-group">
+                                    <a href="https://arielo5.github.io/Work_Day_Scheduler/" class="btn btn-primary">Go
+                                        to Page</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Password Generator -->
+                    <div class="col">
+                        <div class="card shadow-sm text-center">
+                            <img src="assets\images\PG_Screenshot.png" class="card-img-top"
+                                alt="IDK, You Pick Page Web Page">
+
+                            <div class="card-body">
+                                <p class="card-text">For this project was to create a web page that can generate a
+                                    password depending on the criterias that you choose.</p>
+                                <div class="btn-group">
+                                    <a href="https://arielo5.github.io/Password_Generator/" class="btn btn-primary">Go
+                                        to Page</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col">
+                        <div class="card shadow-sm text-center">
+                            <img src="assets\images\IDK_You_Pick_01.png" class="card-img-top"
+                                alt="IDK, You Pick Page Web Page">
 
                             <div class="card-body">
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    </div>
-                                    
+                                <div class="btn-group">
+                                    <a href="https://arielo5.github.io/Group-Collaboration/" class="btn btn-primary">Go
+                                        to Page</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
+                        <div class="card shadow-sm text-center">
+                            <img src="assets\images\IDK_You_Pick_01.png" class="card-img-top"
+                                alt="IDK, You Pick Page Web Page">
 
                             <div class="card-body">
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    </div>
-                                    
+                                <div class="btn-group">
+                                    <a href="https://arielo5.github.io/Group-Collaboration/" class="btn btn-primary">Go
+                                        to Page</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
+                        <div class="card shadow-sm text-center">
+                            <img src="assets\images\IDK_You_Pick_01.png" class="card-img-top"
+                                alt="IDK, You Pick Page Web Page">
 
                             <div class="card-body">
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    </div>
-                                    
+                                <div class="btn-group">
+                                    <a href="https://arielo5.github.io/Group-Collaboration/" class="btn btn-primary">Go
+                                        to Page</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -299,6 +267,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assests/js/contact.js"></script>
 
 </body>
 
