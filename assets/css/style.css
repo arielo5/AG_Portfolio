@@ -8,3 +8,10 @@
     --wtext: white;
 }
 
+.bgcD {
+    background-color: var(--dblue);
+}
+
+.bgcL {
+    background-color: var(--gray);
+}
