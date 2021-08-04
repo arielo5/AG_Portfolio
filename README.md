@@ -23,6 +23,8 @@
 
 **[Github Profile](https://github.com/arielo5)** 
 
+**[LinkIN Profile](https://www.linkedin.com/in/ariel-martinez-tiru/)**
+
 💻 Below is a screenshot of the application:
   
 ![AG Portfolio](./assets/images/AG-portfolio-v3.png)
