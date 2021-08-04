@@ -6,7 +6,7 @@ The motivation for this project was to update my own personal portfolio webpage 
 
 ## Usage
 
-On the webpage you will see an logo icon and a navigation bar on top with a hamburger button that will dropdown the header with buttons for LinkedIn, GitHub, Resume and Contact, and also a small section for about me. When you click on each one of the button it will open another tab for the to the corresponding pages. On the lower part of the page it display all of my previos projects so far. Also the page has a responsive layout that adapts to my viewport on various screens and devices.
+On the webpage you will see an logo icon and a navigation bar on top with a hamburger button that will dropdown the header with buttons for LinkedIn, GitHub, Resume and Contact, and also a small section for about me. When you click on each one of the button it will open another tab for the to the corresponding pages. On the lower part of the page it display all of my previous projects so far. Also the page has a responsive layout that adapts to my viewport on various screens and devices.
 
 ## Links & Screenshots
  * [AG Portfolio](https://arielo5.github.io/AG_Portfolio/)

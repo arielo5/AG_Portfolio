@@ -1,272 +1,662 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <meta name="description" content="personal portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js" defer></script>
-    <title>AG Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AG Portfolio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.9.3-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css" />
+  <script async type="text/javascript" src="./assets/js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  
 </head>
 
 <body>
+  <!-- Navigation bar -->
+  <nav class="navbar is-link is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
 
-    <header>
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+            <span>Home</span>
+          </a>
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#services">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span>Services</span>
+        </a>
+        <a class="navbar-item" href="#resume">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Portfolio</span>
+        </a>
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
 
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white fs-3">About Me:</h4>
-                        <p class="text-muted fs-5">👋 Hi, I’m Ariel Martinez <br><br>
-                            I’m interested in learning new ways to better develope my skils in work and also video games
-                            and board games.
-                            I’m currently learning web development coding with the University of Minnesota Coding Boot
-                            Camp.
-                            I’m looking to collaborate in front end and/or back end web development.</p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">More Info:</h4> <br>
-                        <ul class="list-unstyled">
-                            <li><a type="button" class="btn btn-info btn" href="https://www.linkedin.com/in/ariel-martinez-tiru/" target="_blank">LinkedIn</a></li> <br>
-                            <li><a type="button" class="btn btn-info btn" href="https://github.com/arielo5" target="_blank">GitHub</a></li> <br>
-                            <li><a type="button" class="btn btn-info btn" href="assets\pdf\AGMT_Web_Development_Full_Stack_Resume .pdf" download>Resume</a></li> <br>
-                            <li><div id="contact"><button type="button" class="btn btn-info btn" data-bs-toggle="modal" data-bs-target="#contact-modal">Show Contact Form</button></div></li> <br>
-                        </ul>
-                    </div>
-                </div>
+  <!-- Header -->
+  <section class="hero is-link is-fullheight is-fullheight-with-navbarg">
+    <div class="hero-body has-text-centered">
+      <div class="container">Hello! I am
+        <h1 class="title is-1">
+          Ariel G. Martinez
+        </h1>
+        <h2 class="subtitle is-3">
+          Full Stack Web Developer
+        </h2>
+        <img src="./assets/images/logo2.svg" alt="logo" width="180" height="144">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <!-- Title -->
+    <div class="section-heading has-text-centered">
+      <h3 class="title is-2">About Me</h3>
+      <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
+      <div class="container">
+        <p>Here in my personal portfolio webpage you will see all the skills I acquired so far. I have learn that to better improve myself I need to continuously research and learn all the new tips and knowledge thatI can get my hands on. With my projects i like to give them a more personal touch depending on each project that I work on. I’m interested in learning new ways to better develope my skils in work and also video games and board games. I’m currently learning web development coding with the University of Minnesota Coding Boot Camp. I’m looking to collaborate in front end and/or back end web development.</p>
+      </div>
+    </div>
+
+    <div class="columns has-same-height is-gapless">
+      <div class="column">
+        <!-- Profile -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4">Profile</h3>
+
+            <div class="content">
+              <table class="table-profile">
+                <tr>
+                  <th colspan="1"></th>
+                  <th colspan="2"></th>
+                </tr>
+                <tr>
+                  <td>Address:</td>
+                  <td>My Home</td>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td>651-123-4567</td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td>ari.martinez.tiru@gmail.com</td>
+                </tr>
+              </table>
             </div>
-        </div>
-
-        <!-- Modal -->
-        <div id="contact-modal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <form id="contactForm" name="contact" role="form">
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" name="name" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea name="message" class="form-control"></textarea>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <input type="submit" class="btn btn-success" id="submit">
-                        </div>
-                    </form>
-                </div>
+            <br>
+            <div class="buttons has-addons is-centered">
+              <a href="https://github.com/arielo5" class="button is-link">Github</a>
+              <a href="https://www.linkedin.com/in/ariel-martinez-tiru/" class="button is-link">LinkedIn</a>
+              <a href="https://twitter.com/arielo5" class="button is-link">Twitter</a>
+              <!-- <a href="#" class="button is-link">CodeTrace</a> -->
             </div>
+          </div>
         </div>
-
-        <div class="navbar navbar-dark shadow-sm bgcD">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets\images\logo2.svg" alt="" width="45" height="36">
-                </a>
-                <a href="#" class="navbar-brand d-flex align-items-center fs-1">
-                    <strong>AG Portfolio</strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+      </div>
+      <div class="column">
+        <!-- Profile picture -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-5by4">
+              <img src="./assets/images/new_PP2.jpg" alt="Profile Picture">
+            </figure>
+          </div>
         </div>
-    </header>
+      </div>
+      <div class="column">
+        <!-- Skills -->
+        <div class="card">
+          <div class="card-content skills-content">
+            <h3 class="title is-4">Skills</h3>
+            <div class="content">
 
-    <main>
-
-        <section class="bgcL">
-            <div class="py-5 text-center container">
-                <div class="col-lg-10 col-md-8 mx-auto">
-                    
-                    <p class="lead text-body fs-3">Here in my personal portfolio webpage you will see all the skills I acquired so far. I have learn that to better improve myself I need to continuously research and learn all the new tips and knowledge thatI can get my hands on. With my projects i like to give them a more personal touch depending on each project that I work on. 
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>JavaScript:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="90" max="100"></progress>
                     </p>
-                    <!-- <p>
-                        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-                    </p> -->
+                  </div>
                 </div>
+              </article>
+
+              <!-- <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Vue.js:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="90" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article> -->
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Node.js:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="75" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>HTML5/CSS3</strong>
+                      <br>
+                      <progress class="progress is-primary" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Databases</strong>
+                      <br>
+                      <progress class="progress is-primary" value="70" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
             </div>
-        </section>
-
-        <div class="album py-5 bgcL">
-            <div class="container">
-
-                <h1 class="text-body fs-1">Projects:</h1> <br>
-                
-                <!-- IDK, You Pick -->
-                <div class="row align-items-start ps-0 pe-0 pb-3">
-                    <div class="col">
-                        <div class="card shadow text-center text-center">
-                            <img src="assets\images\IDK_You_Pick_01.png" class="card-img-top"
-                                alt="IDK, You Pick Page Web Page">
-
-                            <div class="card-body">
-                                <p class="card-text">This project was to create a web page that will help you decide
-                                    what movie and cuisien pick for you for a movie date night. The application will
-                                    randomly pick a movie depending on what type of category you choose and the same
-                                    goes for the type of cuisine. You can either just pick one of each seperatly or both
-                                    at the same time.</p>
-
-                                <div class="d-grid gap-2">
-                                    <a href="https://arielo5.github.io/Group-Collaboration/" class="btn btn-primary">Go
-                                        to Page</a>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-                    <!-- Super Weather Page -->
-                    <div class="col">
-                        <div class="card shadow-sm text-center h-100">
-                            <img src="assets\images\Super_Weather_Page_Screenshot.png" class="card-img-top"
-                                alt="IDK, You Pick Page Web Page">
-
-                            <div class="card-body">
-                                <p class="card-text">This project was to create a web page that that will fetch you an
-                                    API of a weather server and display the weather information of the current time and
-                                    also a forecast of the next 5 days of the city you need. I learn that for this work
-                                    you needed to apply all the knowledge for different 3rd party API to betterapply my
-                                    knowledge with other cooding skils.</p>
-                                <div class="d-grid gap-2">
-                                    <a href="https://arielo5.github.io/Super_Weather_Page/" class="btn btn-primary">Go
-                                        to Page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Work Day Scheduler -->
-                    <div class="col">
-                        <div class="card shadow-sm text-center h-100">
-                            <img src="assets\images\work-day-sheduler.png" class="card-img-top"
-                                alt="IDK, You Pick Page Web Page">
-
-                            <div class="card-body">
-                                <p class="card-text">This project was to create a web page that you can see your work
-                                    day schedule and save what you are going to do in that work hour. The reason for
-                                    this project was to apply the knowledge learn with Third-Party APIs using javascrip
-                                    with jQuery and luxon.</p>
-                                <div class="d-grid gap-2">
-                                    <a href="https://arielo5.github.io/Work_Day_Scheduler/" class="btn btn-primary">Go
-                                        to Page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Password Generator -->
-                    <div class="col">
-                        <div class="card shadow-sm text-center h-100">
-                            <img src="assets\images\PG_Screenshot.png" class="card-img-top"
-                                alt="IDK, You Pick Page Web Page">
-
-                            <div class="card-body">
-                                <p class="card-text">For this project was to create a web page that can generate a
-                                    password depending on the criterias that you choose.</p>
-                                <div class="d-grid gap-2">
-                                    <a href="https://arielo5.github.io/Password_Generator/" class="btn btn-primary">Go
-                                        to Page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col">
-                        <div class="card shadow-sm text-center">
-                            <img src="assets\images\IDK_You_Pick_01.png" class="card-img-top"
-                                alt="IDK, You Pick Page Web Page">
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="btn-group">
-                                    <a href="https://arielo5.github.io/Group-Collaboration/" class="btn btn-primary">Go
-                                        to Page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm text-center">
-                            <img src="assets\images\IDK_You_Pick_01.png" class="card-img-top"
-                                alt="IDK, You Pick Page Web Page">
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="btn-group">
-                                    <a href="https://arielo5.github.io/Group-Collaboration/" class="btn btn-primary">Go
-                                        to Page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm text-center">
-                            <img src="assets\images\IDK_You_Pick_01.png" class="card-img-top"
-                                alt="IDK, You Pick Page Web Page">
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="btn-group">
-                                    <a href="https://arielo5.github.io/Group-Collaboration/" class="btn btn-primary">Go
-                                        to Page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-    </main>
-
-    <footer class="text-muted py-5 bg-dark">
-        <div class="container">
-            <p class="float-end mb-1">
-                <a type="button" class="btn btn-info btn" href="#">Back to top</a>
-            </p>
-            <p class="mb-1">Copyright &copy; 2021 Ariel Martinez  </p>
+  <!-- Skills tags -->
+  <br>
+        <div class="tags custom-tags">
+          <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span
+            class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span
+            class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
+            class="tag is-light">jQuery</span><span class="tag is-light">Git</span><span class="tag is-light">MSSQL</span>
+            <!-- <span class="tag is-light">MongoDB</span> -->
             
         </div>
-    </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./assests/js/contact.js"></script>
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-heading">
+      <h3 class="title is-2">Services</h3>
+      <h4 class="subtitle is-5">What can I do for you?</h4>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript.
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js and SQL server databases.
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript.
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js and SQL server databases.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Resume -->
+  <section class="section" id="resume">
+    <div class="section-heading">
+      <h3 class="title is-2">Resume</h3>
+      <h4 class="subtitle is-5">More about my past</h4>
+      <a href="./assets/pdf/AGMT_Web_Development_Full_Stack_Resume .pdf" class="button is-link is-medium">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Download My Resume</span>
+      </a>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Portfolio</h3>
+        <h4 class="subtitle is-5">My latest works</h4>
+      </div>
+      <br>
+
+      <div class="container portfolio-container">
+        <div class="columns">
+          <div class="column is-4">
+            <!-- project 2 -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>The HatTrick Platform </span>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-danger">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./assets/images/TheHatTrickPlatform.png" alt="The HatTrick Platform">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://the-hattrick-platform.herokuapp.com/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/arielo5/Project_2_Purity_Ring" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- Project 1 -->
+            <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <span>IDK You Pick </span>
+                      <span class="tag is-default">Desktop</span>
+                      <span class="tag is-danger">Mobile</span>
+                    </span>
+                  </p>
+                </header>
+                <div class="card-content">
+                  <figure class="image">
+                    <img src="./assets/images/IDK_You_Pick_01.png" alt="IDK_You_Pick">
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a href="https://arielo5.github.io/Group-Collaboration/" class="card-footer-item">Preview</a>
+                  <a href="https://github.com/arielo5/Group-Collaboration" class="card-footer-item">Source
+                    Code</a>
+                </footer>
+              </div>
+            <!-- E-Commerce Back End -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>E-Commerce Back End</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">Desktop</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./assets/images/DB_setup_and_start.gif" alt="E-Commerce Back End">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item" title="Disabled button" disabled>No Preview</a>
+                <a href="https://github.com/arielo5/E-Commerce_Back_End" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- Company Employee Tracker -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Company Employee Tracker</span>
+                    <span class="tag is-default">Desktop</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./assets/images/Company_Employee_Tracker.gif" alt="Company Employee Tracker">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a  class="card-footer-item">No Preview</a>
+                <a href="https://github.com/arielo5/Company_Employee_Tracker" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+
+          </div>
+          <div class="column is-4">
+            <!-- Just a Teck Blog -->
+            <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <span>Just a Teck Blog </span>
+                      <span class="tag is-default">Desktop</span>
+                      <span class="tag is-danger">Mobile</span>
+                    </span>
+                  </p>
+                </header>
+                <div class="card-content">
+                  <figure class="image">
+                    <img src="./assets/images/JustaTeckBlog.png" alt="Just a Teck Blog">
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a href="https://just-a-teck-blog.herokuapp.com/" class="card-footer-item">Preview</a>
+                  <a href="https://github.com/arielo5/Teck_Blog_MVC" class="card-footer-item">Source
+                    Code</a>
+                </footer>
+              </div>
+            <!-- Quiz Game -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Quiz Game</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-danger">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./assets/images/Quiz_Game_1.png" alt="Quiz Game img">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://arielo5.github.io/Quiz_Question_Game/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/arielo5/Quiz_Question_Game" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- Work Day Scheduler -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Work Day Scheduler</span>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-danger">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./assets/images/work-day-sheduler.png" alt="Work Day Scheduler">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://arielo5.github.io/Work_Day_Scheduler/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/arielo5/Work_Day_Scheduler" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!--Best Team Profile Generator -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Best Team Profile Generator</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">Desktop</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./assets/images/team-profile.png" alt="Best Team Profile Generator">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item">No Preview</a>
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/kanban.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+
+          </div>
+          <div class="column is-4">
+            <!-- Super Weather Page -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Super Weather Page</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-danger">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./assets/images/Super_Weather_Page_Screenshot.png" alt="Super Weather Page">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://arielo5.github.io/Super_Weather_Page/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/arielo5/Super_Weather_Page" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- Password Generator -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Password Generator</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./assets/images/PG_Screenshot.png" alt="Password Generator">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://arielo5.github.io/Password_Generator/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/arielo5/Password_Generator" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!--My Note Taker -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>My Note Taker</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./assets/images/My-Note-Taker.png" alt="My Note Taker">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://github.com/arielo5/My_Note_Taker" class="card-footer-item">Preview</a>
+                <a href="https://github.com/arielo5/My_Note_Taker" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!--Pro README Generator-->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Pro README Generator</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">Desktop</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./assets/images/Pro-README-Generator.png" alt="Pro README Generator">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <aclass="card-footer-item">No Preview</a>
+                <a href="https://github.com/arielo5/Pro_ReadMe_Generator" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Contact</h3>
+        <h4 class="subtitle is-5">Get in touch</h4>
+      </div>
+      <br>
+
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="box">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left">
+                <input class="input" type="email" placeholder="Email input" value="">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Textarea"></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped has-text-centered">
+              <div class="control">
+                <button class="button is-link is-large"><span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Submit</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-heading ">
+      <p class="is-size-2">
+        <a href="https://bulma.io">
+            <img
+              src="https://bulma.io/images/made-with-bulma.png"
+              alt="Made with Bulma"
+              width="256"
+              height="48">
+          </a> by <a href="https://github.com/arielo5">Ariel Martinez</a>. The
+        source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
